@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#feature-img-mobile {
+    background: url('../img/hero-img-1.png') top center no-repeat;
+    background-size: auto;
+}
+
+#feature-img-desktop {
+    background: url('../img/hero-img-1.png') top center no-repeat;
+    background-size: auto;
+}
+
+#chartshape-bg {
+    background: url('../img/chart-shape.png') top center no-repeat;
+    background-size: auto;
+}
+
+#about-product::before {
+    content: "";
+    background: url('../img/chart-shape.png') top center no-repeat;
+    background-size: auto;
+    height: 150px;
+    float:left;
+    width:100%;
+}
+
+#process-bg {
+    background: url('../img/easy-steps.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+#step-1::after, #step-2::after  {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 21%;
+    right: -185px;
+    background: url('../img/step-arrow.png') top center no-repeat;
+    background-size: auto;
+    height: 15px;
+    float:left;
+    width:100%;
+}
+
+@media (min-width: 640px) {
+    #step-1::after, #step-2::after {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #step-1::after, #step-2::after {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    #step-1::after, #step-2::after {
+        display: block;
+    }
+}
+
+@media (min-width: 1280px) {
+    #step-1::after, #step-2::after {
+        display: block;
+    }
+}
+
+@media (min-width: 1536px) {
+    #step-1::after, #step-2::after {
+        display: block;
+    }
+}
+
+#solutions details > summary {
+    list-style-type: none;
+}
+
+#solutions details > summary::-webkit-details-marker {
+    display: none;
+}
+
+#solutions details > summary::before {
+    content: '';
+    float:right;
+}
+
+
+#solutions details[open] > summary::before {
+    content: '';
+}
+
+#solutions details > summary i.fa-chevron-circle-up {
+    display: none;
+}
+
+#solutions details[open] > summary i.fa-chevron-circle-down {
+    display: none !important;
+}
+
+#solutions details[open] > summary i.fa-chevron-circle-up {
+    display: inline-block;
+}
+
+#pricingPlans-bg {
+    background: url('../img/choose-best-plan.jpg') top center no-repeat;
+    background-size: auto;
+}
+
+.price-tag {
+    background: url('../img/price-tag.png') top center no-repeat;
+    background-size: auto;
+}
+
+#basic-plan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    background: url('../img/basic-plan-bg.png') top center no-repeat;
+    background-size: cover;
+    height:50%;
+    width:100%;
+}
+
+#standard-plan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    background: url('../img/standard-plan-bg.png') top center no-repeat;
+    background-size: cover;
+    height:50%;
+    width:100%;
+}
+
+#professional-plan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    background: url('../img/professional-plan-bg.png') top center no-repeat;
+    background-size: cover;
+    height:50%;
+    width:100%;
+}
+
+@media (min-width: 768px) {
+    #basic-plan::before, 
+    #standard-plan::before,
+    #professional-plan::before  {
+        height:70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #basic-plan::before, 
+    #standard-plan::before,
+    #professional-plan::before  {
+        background-size: auto;
+        height:100%;
+    }
+}
+
+.left-quote::before  {
+    content: "";
+    position: absolute;
+    left:-15.1px;
+    top:42%;
+    background: url('../img/quote-tail-left.png') top center no-repeat;
+    background-size: auto;
+    width:16px;
+    height: 22px;
+}
+
+.right-quote::after  {
+    content: "";
+    position: absolute;
+    right:-16px;
+    top:42%;
+    background: url('../img/quote-tail-right.png') top center no-repeat;
+    background-size: auto;
+    width:16px;
+    height: 22px;
+}
